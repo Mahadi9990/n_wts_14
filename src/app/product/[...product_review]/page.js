@@ -1,8 +1,9 @@
 
-export default async function AllSulgProduct({params}) {
-    const {product_review} = await params
-    console.log(product_review)
+export default async function AllSulgProduct() {
+    
   return (
-    <div>{product_review}</div>
+    <div>
+      
+    </div>
   )
 }

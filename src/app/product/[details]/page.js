@@ -1,15 +1,20 @@
-// async function getProduct(details) {
-//   const res = await fetch(`https://dummyjson.com/users/${details}`);
-//   return res.json();
-// }
+
+import SingleRecipe from "@/components/recipe_list/singleRecipe";
 
 export default async function ProductPage({ params }) {
-  const { details } =await params; // Destructure params directly
-//   const product = await getProduct(details); // Fetch user data
+  const { details } =await params; 
+  let recipes ={}
+  try {
+    const res = await fetch(`https://dummyjson.com/products/${details}`)
+    const data =await res.json()
+    recipes = data
+  } catch (error) {
+    console.log(error)
+  }
 
   return (
     <div>
-      <h1>{details}</h1>
+      <SingleRecipe recipes={recipes}/>
     </div>
   );
 }
