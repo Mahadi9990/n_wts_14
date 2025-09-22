@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="" data-new-gr-c-s-check-loaded="14.1252.0"data-gr-ext-installed="" cz-shortcut-listen="true">
+      <body data-new-gr-c-s-check-loaded="14.1254.0" data-gr-ext-installed="" cz-shortcut-listen="true">
         {children}
       </body>
     </html>

@@ -1,8 +1,10 @@
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-     <h1 className="text-red-500">hellow</h1>
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500  to-purple-600">
+      <h1>Create Blog page</h1>
+      <Link className="p-5 bg-white text-black" href={'blogs'}>Got blog page</Link>
     </div>
   );
 }
